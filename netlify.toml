@@ -1,0 +1,27 @@
+[build]
+  command = """
+    cd courses/geostatistics &&
+    BASE_URL=/geostatistics jupyter book build --html &&
+    mkdir -p ../../public/geostatistics &&
+    cp -r _build/html/. ../../public/geostatistics/
+  """
+  publish = "public"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+  NODE_VERSION = "22"
+
+# Temporary: send the home page to the course until the gallery page exists
+[[redirects]]
+  from = "/"
+  to = "/geostatistics/"
+  status = 302
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
