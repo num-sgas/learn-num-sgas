@@ -1,0 +1,46 @@
+version: 1
+project:
+  id: 596ac326-dd0c-4c63-961a-45ea8c939bc3
+  title: Геостатистик ба резервуарын загварчлал
+  description: Геостатистик ба резервуарын загварчлалын суурь ойлголт олгох хичээл.
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  exclude:
+    - _attribution.md
+  toc:
+    - file: index.md
+    - file: 01-introduction/index.md
+      children:
+        - file: 01-introduction/01-principles-of-geomodelling.md
+        - file: 01-introduction/02-python-setup.md
+    - file: 02-spatial-prediction/index.md
+      children:
+        - file: 02-spatial-prediction/01-simple-spatial-predictions.md
+        - file: 02-spatial-prediction/02-variogram-and-kriging.md
+        - file: 02-spatial-prediction/03-estimation-vs-simulation.md
+        - file: 02-spatial-prediction/04-case-aeolian-reservoir.md
+    - file: 03-facies-modelling/index.md
+      children:
+        - file: 03-facies-modelling/01-non-gaussian-predictions.md
+        - file: 03-facies-modelling/02-case-deltaic-reservoir.md
+        - file: 03-facies-modelling/03-object-modelling.md
+        - file: 03-facies-modelling/04-case-turbiditic-reservoir.md
+    - file: 04-property-modelling/index.md
+      children:
+        - file: 04-property-modelling/01-co-simulation.md
+        - file: 04-property-modelling/02-case-carbonate-reservoir.md
+    - file: 05-capstone/index.md
+      children:
+        - file: 05-capstone/01-geothermal-exploration.md
+site:
+  template: book-theme
+  options:
+    logo_text: Геостатистик
+    folders: true
+  nav:
+    - title: "← Бусад хичээл"
+      url: https://learn.num-sgas.com/
+  actions:
+    - title: num-sgas.com
+      url: https://num-sgas.com

@@ -1,0 +1,2 @@
+# Needed by Netlify to build the website
+jupyter-book==2.1.7
