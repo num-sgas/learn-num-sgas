@@ -16,7 +16,7 @@ project:
         - file: 01-introduction/02-python-setup.md
     - file: 02-spatial-prediction/index.md
       children:
-        - file: 02-spatial-prediction/01-simple-spatial-predictions.md
+        - file: 02-spatial-prediction/01-simple-spatial-predictions.ipynb
         - file: 02-spatial-prediction/02-variogram-and-kriging.md
         - file: 02-spatial-prediction/03-estimation-vs-simulation.md
         - file: 02-spatial-prediction/04-case-aeolian-reservoir.md
