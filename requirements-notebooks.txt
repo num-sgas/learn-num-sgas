@@ -1,0 +1,15 @@
+numpy<2
+scipy
+numba
+pandas
+xarray
+netCDF4
+h5netcdf
+scikit-learn
+joblib
+matplotlib
+pyvista
+ipywidgets
+ipympl
+geomodpy @ https://github.com/grongier/geomodpy/releases/download/v0.0.1/geomodpy-0.0.1-py3-none-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl ; sys_platform == 'linux'
+geomodpy @ https://github.com/grongier/geomodpy/releases/download/v0.0.1/geomodpy-0.0.1-py3-none-win_amd64.whl ; sys_platform == 'win32' and platform_machine == 'AMD64'
