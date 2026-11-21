@@ -1,0 +1,56 @@
+version: 1
+project:
+  id: b84c0048-f322-4ac5-b62b-5aeaa86a4914
+  title: "Цооногийн геофизик: Литологийн тайлал ба загварчлал"
+  description: Каротажийн үндсэн муруйнууд, тэдгээрийн ашигт малтмалын хайгуул дахь хэрэглээ, өгөгдөл боловсруулалт, каротажийн өгөгдлөөс литологи тайлахад машин сургалт ашиглах аргачлалыг танилцуулсан, практик ажлуудтай бие даан судлах хичээл.
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  toc:
+    - file: index.md
+    - file: 01-well-logs/index.md
+      children:
+        - file: 01-well-logs/01-introduction.md
+        - file: 01-well-logs/02-gamma-ray.md
+        - file: 01-well-logs/03-density.md
+        - file: 01-well-logs/04-resistivity.md
+        - file: 01-well-logs/05-sonic.md
+        - file: 01-well-logs/06-spontaneous-potential.md
+        - file: 01-well-logs/07-photoelectric.md
+    - file: 02-ml-basics/index.md
+      children:
+        - file: 02-ml-basics/01-introduction.md
+        - file: 02-ml-basics/02-types-of-learning.md
+        - file: 02-ml-basics/03-supervised-learning.md
+        - file: 02-ml-basics/04-ml-workflow.md
+        - file: 02-ml-basics/05-ml-algorithms.md
+        - file: 02-ml-basics/06-python-setup.md
+    - file: 03-data-preparation/index.md
+      children:
+        - file: 03-data-preparation/01-exploratory-data-analysis.md
+        - file: 03-data-preparation/02-outliers.md
+        - file: 03-data-preparation/03-missing-data.md
+        - file: 03-data-preparation/04-feature-engineering.md
+        - file: 03-data-preparation/05-training-data.md
+    - file: 04-machine-learning/index.md
+      children:
+        - file: 04-machine-learning/01-random-forest.md
+        - file: 04-machine-learning/02-hyperparameter-tuning.md
+        - file: 04-machine-learning/03-training-and-evaluation.md
+        - file: 04-machine-learning/04-lithology-interpretation.md
+    - file: 05-capstone/index.md
+      children:
+        - file: 05-capstone/01-assignment.md
+        - file: 05-capstone/02-xgboost.md
+        - file: 05-capstone/03-visualization.md
+site:
+  template: book-theme
+  options:
+    logo_text: Литологийн тайлал
+    folders: true
+  nav:
+    - title: "← Бусад хичээл"
+      url: https://learn.num-sgas.com/
+  actions:
+    - title: num-sgas.com
+      url: https://num-sgas.com
