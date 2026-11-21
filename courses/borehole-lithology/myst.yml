@@ -47,6 +47,7 @@ site:
   template: book-theme
   options:
     logo_text: Литологийн тайлал
+    favicon: ../../site/sgas-mark.svg
     folders: true
   nav:
     - title: "← Бусад хичээл"

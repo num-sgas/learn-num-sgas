@@ -6,12 +6,6 @@
   PYTHON_VERSION = "3.12"
   NODE_VERSION = "22"
 
-# Temporary: send the home page to the course until the gallery page exists
-[[redirects]]
-  from = "/"
-  to = "/geostatistics/"
-  status = 302
-
 [[headers]]
   for = "/*"
   [headers.values]

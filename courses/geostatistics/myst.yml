@@ -37,6 +37,7 @@ site:
   template: book-theme
   options:
     logo_text: Геостатистик
+    favicon: ../../site/sgas-mark.svg
     folders: true
   nav:
     - title: "← Бусад хичээл"

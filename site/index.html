@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SGAS Learn — Онлайн хичээлүүд</title>
+<meta name="description" content="Геофизик, геостатистик, цооногийн геофизикийн чиглэлийн бие даан судлах онлайн хичээлүүд.">
+<meta property="og:title" content="SGAS Learn">
+<meta property="og:description" content="Геошинжлэх ухааны бие даан судлах хичээлүүд.">
+<link rel="icon" href="/sgas-mark.svg" type="image/svg+xml">
+<style>
+  :root {
+    --ink: #0f172a; --muted: #475569; --faint: #94a3b8; --line: #e2e8f0;
+    --bg: #f8fafc; --card: #ffffff; --brand: #1d4ed8; --brand-dark: #1e3a8a; --accent: #0ea5e9;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+  a { color: inherit; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+
+  header { background: #fff; border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 1rem; }
+  .logo { display: flex; align-items: center; gap: .8rem; text-decoration: none; color: var(--ink); }
+  .logo img { width: 52px; height: 52px; border-radius: 12px; }
+  .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .logo-name { font-size: 1.55rem; font-weight: 800; letter-spacing: .02em; }
+  .logo-name span { font-weight: 600; background: linear-gradient(90deg, var(--brand), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .logo-tag { font-size: .78rem; color: var(--muted); letter-spacing: .06em; margin-top: .2rem; }
+  .head-link { text-decoration: none; color: var(--muted); font-size: .95rem; }
+  .head-link:hover { color: var(--brand); }
+
+  .hero { background: linear-gradient(135deg, var(--brand-dark), var(--brand) 60%, var(--accent)); color: #fff; position: relative; overflow: hidden; }
+  .hero .wrap { padding-top: 3.5rem; padding-bottom: 3.5rem; position: relative; z-index: 1; }
+  .hero h1 { margin: 0 0 .6rem; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; max-width: 24ch; }
+  .hero p { margin: 0; font-size: 1.1rem; max-width: 60ch; opacity: .92; }
+  .hero svg.strata { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 75%; opacity: .16; }
+
+  main .wrap { padding-top: 2.5rem; padding-bottom: 3rem; }
+  h2 { font-size: 1.35rem; margin: 0 0 1.25rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; transition: transform .15s ease, box-shadow .15s ease; text-decoration: none; }
+  a.card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px -12px rgba(15, 23, 42, .25); }
+  .thumb { aspect-ratio: 16 / 9; display: block; width: 100%; }
+  .body { padding: 1.1rem 1.25rem 1.3rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
+  .tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .tag { font-size: .75rem; font-weight: 600; padding: .15rem .55rem; border-radius: 999px; background: #eff6ff; color: var(--brand); }
+  .tag.soon { background: #fef3c7; color: #92400e; }
+  .card h3 { margin: 0; font-size: 1.15rem; line-height: 1.3; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .meta { margin-top: auto; padding-top: .6rem; display: flex; justify-content: space-between; align-items: center; font-size: .85rem; color: var(--faint); }
+  .cta { font-weight: 700; color: var(--brand); }
+
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 3rem; }
+  .step { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.1rem; }
+  .step b { display: inline-grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--brand); color: #fff; font-size: .9rem; margin-bottom: .4rem; }
+  .step p { margin: 0; color: var(--muted); font-size: .93rem; }
+
+  footer { border-top: 1px solid var(--line); background: #fff; font-size: .88rem; color: var(--muted); }
+  footer .wrap { padding-top: 1.4rem; padding-bottom: 1.4rem; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; }
+  footer a { color: var(--brand); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="/">
+      <img src="/sgas-mark.svg" alt="SGAS">
+      <span class="logo-text">
+        <span class="logo-name">SGAS <span>Learn</span></span>
+        <span class="logo-tag">Геофизик, геошинжлэх ухааны хичээлүүд</span>
+      </span>
+    </a>
+    <a class="head-link" href="https://num-sgas.com">num-sgas.com</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Геофизик, геошинжлэх ухааны хичээлүүд</h1>
+    <p>Монгол хэл дээр бэлтгэсэн унших материалууд, геофизикийн бодлогууд, заавар хичээл болон Python код бүхий дасгалууд.</p>
+  </div>
+  <svg class="strata" viewBox="0 0 600 260" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 60 C120 30 220 90 340 60 S520 30 600 50 V260 H0Z" fill="#fff" opacity=".35"/>
+    <path d="M0 120 C140 90 240 150 360 115 S520 95 600 110 V260 H0Z" fill="#fff" opacity=".45"/>
+    <path d="M0 180 C120 160 260 210 380 175 S530 160 600 170 V260 H0Z" fill="#fff" opacity=".6"/>
+  </svg>
+</section>
+
+<main>
+  <div class="wrap">
+    <h2>Хичээлээ сонгоно уу</h2>
+
+    <div class="grid">
+
+      <!-- Хичээл: Геостатистик -->
+      <a class="card" href="/geostatistics/">
+        <svg class="thumb" viewBox="0 0 320 180" aria-hidden="true">
+          <rect width="320" height="180" fill="#eff6ff"/>
+          <g fill="#93c5fd"><circle cx="40" cy="140" r="4"/><circle cx="70" cy="118" r="4"/><circle cx="100" cy="96" r="4"/><circle cx="135" cy="80" r="4"/><circle cx="170" cy="68" r="4"/><circle cx="205" cy="62" r="4"/><circle cx="240" cy="59" r="4"/><circle cx="275" cy="60" r="4"/></g>
+          <path d="M30 150 C80 110 130 75 190 62 S270 58 300 58" stroke="#1d4ed8" stroke-width="3.5" fill="none"/>
+          <line x1="30" y1="58" x2="300" y2="58" stroke="#64748b" stroke-dasharray="5 5"/>
+          <line x1="30" y1="150" x2="300" y2="150" stroke="#cbd5e1"/><line x1="30" y1="30" x2="30" y2="150" stroke="#cbd5e1"/>
+          <text x="36" y="44" font-size="13" fill="#475569" font-family="serif" font-style="italic">γ(h)</text>
+          <text x="282" y="168" font-size="13" fill="#475569" font-family="serif" font-style="italic">h</text>
+        </svg>
+        <div class="body">
+          <div class="tags"><span class="tag">Python</span><span class="tag soon">Бэлтгэгдэж байна</span></div>
+          <h3>Геостатистик ба резервуарын загварчлал</h3>
+          <p>Орон зайн интерполяци, вариограм, кригинг, стохастик симуляци ашиглан резервуарын загвар гаргах.</p>
+          <div class="meta"><span>5 бүлэг · 13 сэдэв</span><span class="cta">Эхлэх →</span></div>
+        </div>
+      </a>
+
+      <!-- Хичээл: Цооногийн геофизик — Литологийн тайлал -->
+      <a class="card" href="/borehole-lithology/">
+        <svg class="thumb" viewBox="0 0 320 180" aria-hidden="true">
+          <rect width="320" height="180" fill="#f0fdf4"/>
+          <g stroke-width="2.5" fill="none">
+            <path d="M60 10 C75 30 45 50 62 70 S80 110 55 130 S70 160 60 175" stroke="#16a34a"/>
+            <path d="M120 10 C105 35 140 55 118 80 S100 120 130 140 S115 165 122 175" stroke="#dc2626"/>
+            <path d="M180 10 C190 40 170 60 185 85 S195 120 175 145 S190 165 182 175" stroke="#2563eb"/>
+          </g>
+          <line x1="30" y1="10" x2="30" y2="175" stroke="#cbd5e1"/>
+          <rect x="225" y="20" width="70" height="38" fill="#facc15" opacity=".85"/>
+          <rect x="225" y="58" width="70" height="30" fill="#64748b" opacity=".85"/>
+          <rect x="225" y="88" width="70" height="44" fill="#fde68a" opacity=".9"/>
+          <rect x="225" y="132" width="70" height="38" fill="#475569" opacity=".85"/>
+          <path d="M200 95 h18 m-6 -6 l6 6 l-6 6" stroke="#475569" stroke-width="2" fill="none"/>
+        </svg>
+        <div class="body">
+          <div class="tags"><span class="tag">Python</span><span class="tag">Машин сургалт</span><span class="tag soon">Бэлтгэгдэж байна</span></div>
+          <h3>Цооногийн геофизик: Литологийн тайлал ба загварчлал</h3>
+          <p>Каротажийн үндсэн муруйнуудыг судалж, машин сургалтаар литологи тайлах. FORCE 2020 өгөгдөл дээр бие даан ажиллах.</p>
+          <div class="meta"><span>5 бүлэг · 25 сэдэв</span><span class="cta">Эхлэх →</span></div>
+        </div>
+      </a>
+
+      <!-- Шинэ хичээл нэмэхдээ дээрх <a class="card"> ... </a> блокийг хуулж, холбоос, гарчиг, тайлбарыг өөрчилнө. -->
+
+    </div>
+
+    <div class="steps">
+      <div class="step"><b>1</b><p>Хичээлээ сонгоод тойм хуудсыг уншина.</p></div>
+      <div class="step"><b>2</b><p>Сэдэв бүрийн тайлбарыг уншиж, кодыг судална.</p></div>
+      <div class="step"><b>3</b><p>Notebook-ийг татаж аваад JupyterLab дээр өөрөө ажиллуулна.</p></div>
+      <div class="step"><b>4</b><p>Дасгалаа хийж, мэдлэгээ бататгана.</p></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 SGAS · <a href="https://num-sgas.com">num-sgas.com</a></span>
+    <span>Агуулга <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, код <a href="https://opensource.org/license/mit">MIT</a> лицензтэй</span>
+  </div>
+</footer>
+
+</body>
+</html>
