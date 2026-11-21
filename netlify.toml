@@ -1,10 +1,5 @@
 [build]
-  command = """
-    cd courses/geostatistics &&
-    BASE_URL=/geostatistics jupyter book build --html &&
-    mkdir -p ../../public/geostatistics &&
-    cp -r _build/html/. ../../public/geostatistics/
-  """
+  command = "bash build.sh"
   publish = "public"
 
 [build.environment]
