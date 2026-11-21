@@ -46,6 +46,7 @@ project:
 site:
   template: book-theme
   options:
+    logo: ../../site/sgas-mark.svg
     logo_text: Литологийн тайлал
     favicon: ../../site/sgas-mark.svg
     folders: true
