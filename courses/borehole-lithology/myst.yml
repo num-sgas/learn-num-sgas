@@ -27,7 +27,7 @@ project:
         - file: 02-ml-basics/06-python-setup.md
     - file: 03-data-preparation/index.md
       children:
-        - file: 03-data-preparation/01-exploratory-data-analysis.md
+        - file: 03-data-preparation/01-exploratory-data-analysis.ipynb
         - file: 03-data-preparation/02-outliers.md
         - file: 03-data-preparation/03-missing-data.md
         - file: 03-data-preparation/04-feature-engineering.md
